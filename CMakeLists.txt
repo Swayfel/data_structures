@@ -4,5 +4,6 @@ project(data_structures C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(data_structures main.c
-        stack/stack.c)
+        stack/stack.c
+        linked_list/linked_list.c.h)
 include_directories(stack)
