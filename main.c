@@ -21,6 +21,14 @@ void useLinkedList() {
     insertAtBeginning(&list, 20);
     insertAtBeginning(&list, 30);
     insertAtBeginning(&list, 40);
+    insertAtEnd(&list, 100);
+    printList(&list);
+
+    removeByValue(&list, 100);
+    printList(&list);
+    removeByValue(&list, 20);
+    printList(&list);
+    removeByValue(&list, 100);
     printList(&list);
 }
 
