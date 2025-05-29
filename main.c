@@ -1,16 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "linked_list/linked_list.h"
 #include "stack/stack.h"
 
 void useStack();
+void useLinkedList();
 
 int main(void) {
 
-    useStack();
+    //useStack();
+    useLinkedList();
     return 0;
 }
 
+void useLinkedList() {
+    LinkedList list;
+    initList(&list);
+    insertAtBeginning(&list, 10);
+    insertAtBeginning(&list, 20);
+    insertAtBeginning(&list, 30);
+    insertAtBeginning(&list, 40);
+    printList(&list);
+}
 
 void useStack() {
     Stack stack;

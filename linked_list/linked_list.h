@@ -1,12 +1,12 @@
 #ifndef LINKED_LIST_C_H
 #define LINKED_LIST_C_H
-typedef struct Node {
+typedef struct ListNode {
     int data;
-    struct Node *next;
-} Node;
+    struct ListNode *next;
+} ListNode;
 
-typedef struct {
-    struct Node *head;
+typedef struct LinkedList {
+    struct ListNode *head;
 } LinkedList;
 
 void initList(LinkedList* list);
